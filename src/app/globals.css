@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-charcoal: #050505;
+  --color-brand-secondary: #0A0A0C;
+  --color-brand-gold: #D4AF37;
+  --color-brand-crimson: #8B0000;
+  --color-text-primary: rgba(255, 255, 255, 0.9);
+  --color-text-secondary: rgba(255, 255, 255, 0.6);
+  --font-sans: var(--font-sans, "Geist", "Inter", "Helvetica", sans-serif);
+  --font-serif: var(--font-serif, "Canela", "Chrono", "Playfair Display", serif);
+}
+
+@layer base {
+  html {
+    background-color: var(--color-brand-charcoal);
+    color: var(--color-text-primary);
+  }
+}
+
+body {
+  background-color: var(--color-brand-charcoal);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-brand-gold);
+  color: var(--color-brand-charcoal);
+}
